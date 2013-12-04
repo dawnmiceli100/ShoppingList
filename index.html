@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>My Shopping List</title>
+		<link rel="stylesheet" href="main.css" type="text/css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="application.js"></script>
+		
+	</head>	
+
+	<body>
+	<!-- Container of all elements on page -->	
+	<div id="container">
+
+		<!-- Box to frame the application -->
+		<div id="frame">
+
+			<h1>My Shopping List</h1>	
+
+			<p>Enter an item to add to your list</p>
+
+			<div id="addItem">
+
+				<input id="itemToAdd" type="text" autocomplete="off" name="itemToAdd">
+
+				<button id="addButton">+</button>
+
+			</div>
+
+
+			<div id="shoppingList">
+				<ul id="listItems">
+					<!-- hard code 2 items to show checked vs unchecked -->
+					<li>
+						<input type="checkbox" name="item" checked> 
+						<label for="item">Broccoli</label>
+					</li>
+					<li>
+						<input type="checkbox" name="item">
+						<label for="item">Eggs</label>
+					</li>
+				</ul>	
+			</div>	
+
+			<p id="errorMessage" class="hidden alert">
+					You must enter a name for you item.
+			</p>
+			
+		</div>
+		<!-- End of frame -->	
+				
+	</div>
+	<!-- End of Container -->
+	</body>
+
+</html>	
