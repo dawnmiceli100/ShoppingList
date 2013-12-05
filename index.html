@@ -20,20 +20,27 @@
 
 			<h1>My Shopping List</h1>	
 
-			<p>Enter an item to add to your list</p>
-
 			<div id="addItem">
 
-				<input id="itemToAdd" type="text" autocomplete="off" name="itemToAdd">
+				<input id="itemToAdd" type="text" placeholder="type the name of your item here" autocomplete="off" name="itemToAdd">
 
 				<button id="addButton">+</button>
+
+			</div>
+
+			<div id="messageBox">
+
+				<p id="errorMessage" class="hidden alert">
+					You must enter a name for you item.
+				</p>
 
 			</div>
 
 
 			<div id="shoppingList">
 				<ul id="listItems">
-					<!-- hard code 2 items to show checked vs unchecked -->
+
+					<!-- hard code 2 items to show checked vs unchecked 
 					<li>
 						<input type="checkbox" name="item" checked> 
 						<label for="item">Broccoli</label>
@@ -42,12 +49,11 @@
 						<input type="checkbox" name="item">
 						<label for="item">Eggs</label>
 					</li>
+					-->
 				</ul>	
 			</div>	
 
-			<p id="errorMessage" class="hidden alert">
-					You must enter a name for you item.
-			</p>
+			<button id="deleteButton">Delete Checked Items</button>
 			
 		</div>
 		<!-- End of frame -->	

@@ -15,10 +15,7 @@ $(document).ready(function() {
 			$('#errorMessage').addClass('hidden');
 			// Append new item to list. This will be an input of type checkbox
 			// that has a label equal to the name of the shopping list item added. 
-			$('#listItems').append('<li>');
-			$('#listItems').append('<input type="checkbox" name="item">');
-			$('#listItems').append('<label for "item">' + ' ' + newItem + '</label>');	
-			$('#listItems').append('</li/');
+			$('#listItems').append('<li><input type="checkbox" name="item"><label for "item">' + ' ' + newItem + '</label></li>');
 		};	
 
 		$('#itemToAdd').focus();
@@ -31,6 +28,12 @@ $(document).ready(function() {
 			$('#addButton').click();	
 		};	
 	});	
+
+	$('#deleteButton').click(function() {
+		$("input:checked").parent().remove();
+		$('#itemToAdd').focus();
+	});
+
 
 		
 });
